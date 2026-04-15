@@ -21,7 +21,7 @@ public class User {
 
     private String email ;
 
-    private String avtarurl;
+    private String avatarUrl;
 
     @Column(unique = true)
     private String githubUsername ;

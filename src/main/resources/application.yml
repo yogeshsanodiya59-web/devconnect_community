@@ -13,6 +13,15 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Ov23li1wMamja2qHcFtb
+            client-secret: bae3ea310d928f792403bc014c2d5d9493240c66
+            scope: read:user,user:email
+
 
 server:
   port: 8080
