@@ -3,8 +3,8 @@ spring:
     name: devconnect
   datasource:
     url: jdbc:mysql://localhost:3306/devconnect
-    username: root
-    password: Yogesh@59
+    username: ----
+    password: hhhh
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -18,8 +18,9 @@ spring:
       client:
         registration:
           github:
-            client-id: Ov23li1wMamja2qHcFtb
-            client-secret: bae3ea310d928f792403bc014c2d5d9493240c66
+            client-id: --_--_-_-_--_--__
+            client-secret:
+_--_-_-_-_--_-_--_--_-_-_-
             scope: read:user,user:email
 
 
