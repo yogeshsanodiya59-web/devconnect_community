@@ -1,7 +1,5 @@
 package com.devconnect.repository;
 
-import org.hibernate.type.descriptor.converter.spi.JpaAttributeConverter;
-import org.springframework.boot.webmvc.autoconfigure.WebMvcProperties;
 import org.springframework.data.jpa.repository.JpaRepository;
 //import org.springframework.security.core.userdetails.User;
 import com.devconnect.entity.User;

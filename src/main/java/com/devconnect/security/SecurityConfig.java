@@ -4,7 +4,6 @@ package com.devconnect.security;
 import io.jsonwebtoken.Jwt;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
-import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.hibernate.Session;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -32,7 +31,7 @@ public class SecurityConfig {
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth ->
-                                auth.requestMatchers("/auth/**")
+                                auth.requestMatchers("/auth/**" , "/api/users/test")
                                         .permitAll()
                 .anyRequest().authenticated()
                 )
@@ -43,5 +42,5 @@ public class SecurityConfig {
 
                 return http.build();
     }
-    }
+}
 
